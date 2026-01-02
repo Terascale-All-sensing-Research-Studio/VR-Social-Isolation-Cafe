@@ -8,7 +8,7 @@
 [Overview of Dataset](#overview-of-dataset)
 
 ## Description
-The Social Isolation Cafe dataset consists of 35 human participants interacting with a hostess NPC in a virtual cafe environment, designed using a Unity 6000.0.53f1, to order food off a menu. Each participant is randomly assigned to 4 treatment: No wait for hostess and No wait for food (00), No wait for hostess and 3-minute wait for food (03), 3-minutes wait for hostess and No wait for food (30), and 3-minutes wait for hostess and 3-minute wait for food (33). Each participant completed all 4 treatments using a Meta Quest Pro headset. For each participant, we collect demographic data, frustration intolerance using the Frustration Discomfort Scale (FDS), subjective feelings of loneliness using the Revised UCLA Loneliness Scale (R-UCLA), severity of social phobia using Social Phobia Inventory (SPIN), and current state of anxiety using State Trait Anxiety Inventory (STAI) prior to immersion. After each treatment, participants provided their perceived level of anxiety using the STAI and custom frustration scales using a 5-point Likert scale. After completing all treatments, participants retook the FDS and completed the NASA Task Load Index (TLX), System Usability Scale (SUS), and Cybersickness in VR Questionnaire (VRCS). Our dataset also consists of head, left hand, and right hand position and orientation data as well as object names and hit positions of all objects the participant visually engaged with. 
+The Social Isolation Cafe dataset consists of 35 human participants interacting with a hostess NPC in a virtual cafe environment, designed using a Unity 6000.0.53f1, to order food off a menu. Each participant is randomly assigned to 4 treatment: No wait for hostess and No wait for food (00), No wait for hostess and 3-minute wait for food (03), 3-minutes wait for hostess and No wait for food (30), and 3-minutes wait for hostess and 3-minute wait for food (33). Each participant completed all 4 treatments using a Meta Quest Pro headset. For each participant, we collect demographic data, frustration intolerance using the Frustration Discomfort Scale (FDS), subjective feelings of loneliness using the Revised UCLA Loneliness Scale (R-UCLA), severity of social phobia using Social Phobia Inventory (SPIN), and current state of anxiety using State Trait Anxiety Inventory (STAI) prior to immersion. After each treatment, participants provided their perceived level of anxiety using the STAI and custom frustration scales using a 5-point Likert scale. After completing all treatments, participants retook the FDS and completed the NASA Task Load Index (TLX), System Usability Scale (SUS), and Cybersickness in VR Questionnaire (VRCS). Our dataset also consists of head, left hand, and right hand position and orientation data as well as object names and hit positions of all objects the participant visually and physically engaged with. 
 
 ## Contributors
 TBA
@@ -28,23 +28,34 @@ The dataset is organized into the following folders:
 | SPIN | None | CSV | Participant responses to the Social Phobia Inventory (SPIN). Each participant is assigned a unique 5-character ID. |
 | STAI | None | CSV | Participant responses to the State Trait Anxiety Inventory (STAI). Each participant is assigned a unique 5-character ID. |
 | SUS	| None |	CSV	| Participant responses to the standard System Usability Scale (SUS). Each participant is assigned a unique 5-character ID. |
-| TreatmentResponses |	None |	CSV	| Participant responses to each treatment, i.e., being notified about the reason for the wait (With_Notification) or not being notified about the reason (Without_Notification). Participant responses include their time estimate for the wait in minutes, their frustration level on a 5-point Likert scale (1 being lowest and 5 highest), and their likelihood to exit on a 5-point Likert scale. Each participant is assigned a unique 5-character ID.
-| VRData	| Yes	| CSV | Contains 36 subfolders that represents each participant. Each subfolder is named with the unique 5-character ID. Within each participant subfolder there are three additional subfolders named ParticipantID_NO_WAIT, ParticipantID_3_MINUTE_WAIT and ParticipantID_6_MINUTE_WAIT. Here Participant_ID is the unique 5-character ID and NO_WAIT, 3_MINUTE_WAIT and 6_MINUTE_WAIT are the wait conditions. Within the ParticipantID_NO_WAIT, ParticipantID_3_MINUTE_WAIT, and ParticipantID_6_MINUTE_WAIT subfolders are four CSV files for Eye Gaze (EyeGazeLog), Head Position and Orientation (HeadPosition), Left Hand (LeftHandLog), and Right Hand (RightHandLog). Thus, each participant has 12 CSV files. |
+| TreatmentResponses |	None |	CSV	| Participant responses to each treatment, i.e., not being forced to wait for a social interaction (00 or 03) or being forced to wait for a social interaction (33 or 30). Participant responses include their frustration level on a 5-point Likert scale caused by people proximity, noise level, time delay, feeling isolated, anxiousness, and finally their likelihood of doing making the same choices in real life. Each participant is assigned a unique 5-character ID.
+| VRData	| Yes	| CSV | Contains 35 subfolders that represents each participant. Each subfolder is named with the unique 5-character ID. Within each participant subfolder there are four additional subfolders named ParticipantID_0_0, ParticipantID_0_3, ParticipantID_3_0, and ParticipantID_3_3. Here Participant_ID is the unique 5-character ID and _0_0, _0_3, _3_0, and _3_3  are the wait conditions. Within the ParticipantID_0_0, ParticipantID_0_3, ParticipantID_3_0, and ParticipantID_3_3 subfolders are *six CSV files for Button Log (ButtonLog), Eye Gaze (EyeGazeLog), *Hand Grab Log (HandGrabLog), Head Position and Orientation (Head), Left Hand (LeftHand), and Right Hand (RightHand). Thus, each participant has *24 CSV files. |
+
+*a HandGrabLog is only created if a participant interacts with an object in the environment.
 
 ### Dataset Frame Rate Summary
-The minimum (Min), maximum (Max), and average (Mean) frame rate for the head, eye gaze, right hand, and left hand for our dataset are provided below.  
+The minimum (Min), maximum (Max), and average (Mean) frame rate for the eye gaze, hand grab log, head, left hand, and right hand for our dataset are provided below.  
 
 | Treatment | Type of Data | Min | Max | Mean | SD |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| NO_WAIT | Head | 49.52 | 71.55 | 67.81 | 3.42 |
-| | Eye gaze | 49.36 | 70.83 | 67.65 | 3.46 |
-| | Right hand | 49.52 | 71.55 | 67.81 | 3.42 |
-| | Left hand | 49.52 | 71.55 | 67.81 | 3.42 |
-| 3_MINUTE_WAIT | Head | 55.42 | 103.84 | 65.11 | 7.23 |
-| | Eye gaze | 54.09 | 103.84 | 64.85 | 7.20 |
-| | Right hand | 55.42 | 103.84 | 65.11 | 7.23 |
-| | Left hand | 55.42 | 103.84 | 65.11 | 7.23 |
-| 6_MINUTE_WAIT | Head | 55.18 | 71.69 | 60.91 | 3.32 |
-| | Eye gaze | 55.18 | 71.67 | 60.70 | 3.94 |
-| | Right hand | 55.18 | 71.69 | 60.92 | 3.32 |
-| | Left hand | 55.18 | 71.69 | 60.92 | 3.32 |
+| 00 | EyeGaze | 44.67 | 71.88 | 69.47 | 5.52 |
+|| HandGrabLog | 47.67 | 50.58 | 49.13 | 2.05 |
+|| Head | 44.86 | 71.88 | 70.16 | 5.38 |
+|| LeftHand | 44.86 | 71.88 | 70.16 | 5.38 |
+|| RightHand | 44.86 | 71.88 | 70.16 | 5.38 |
+| 03 | EyeGaze | 50.82 | 72.4 | 69.5 | 3.93 |
+|| HandGrabLog | 8.36 | 77.9 | 37.16 | 16.84 |
+|| Head | 52.66 | 72.44 | 70.79 | 3.24 |
+|| LeftHand | 52.66 | 72.44 | 70.79 | 3.24 |
+|| RightHand | 52.66 | 72.44 | 70.79 | 3.24 |
+| 30 | EyeGaze | 42.73 | 71.79 | 68.87 | 5.85 |
+|| HandGrabLog | 8.68 | 72.09 | 28.8 | 18.92 |
+|| Head | 43.7 | 71.81 | 70.22 | 5.37 |
+|| LeftHand | 43.7 | 71.81 | 70.22 | 5.37 |
+|| RightHand | 43.7 | 71.81 | 70.22 | 5.37 |
+| 33 | EyeGaze | 51.84 | 71.77 | 69.46 | 3.53 |
+|| HandGrabLog | 6.23 | 72.13 | 34.32 | 21.42 |
+|| Head | 52.84 | 72.69 | 70.73 | 3.33 |
+|| LeftHand | 52.84 | 72.69 | 70.73 | 3.33 |
+|| RightHand | 52.84 | 72.69 | 70.73 | 3.33 |
+
