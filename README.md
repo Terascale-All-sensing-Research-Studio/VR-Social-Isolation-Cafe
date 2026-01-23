@@ -1,4 +1,4 @@
-## Waiting in Line in Virtual Reality Dataset (WAIT)
+## User Behavior in an Interactive Virtual Reality Cafe
 
 ## Contents
 [Description](#description)
@@ -8,7 +8,7 @@
 [Overview of Dataset](#overview-of-dataset)
 
 ## Description
-The Social Isolation Cafe dataset consists of 35 human participants interacting with a hostess NPC in a virtual cafe environment, designed using a Unity 6000.0.53f1, to order food off a menu. Each participant is randomly assigned to 4 treatment: No wait for hostess and No wait for food (00), No wait for hostess and 3-minute wait for food (03), 3-minutes wait for hostess and No wait for food (30), and 3-minutes wait for hostess and 3-minute wait for food (33). Each participant completed all 4 treatments using a Meta Quest Pro headset. For each participant, we collect demographic data, frustration intolerance using the Frustration Discomfort Scale (FDS), subjective feelings of loneliness using the Revised UCLA Loneliness Scale (R-UCLA), severity of social phobia using Social Phobia Inventory (SPIN), and current state of anxiety using State Trait Anxiety Inventory (STAI) prior to immersion. After each treatment, participants provided their perceived level of anxiety using the STAI and custom frustration scales using a 5-point Likert scale. After completing all treatments, participants retook the FDS and completed the NASA Task Load Index (TLX), System Usability Scale (SUS), and Cybersickness in VR Questionnaire (VRCS). Our dataset also consists of head, left hand, and right hand position and orientation data as well as object names and hit positions of all objects the participant visually and physically engaged with. 
+The Social Isolation Cafe dataset consists of 35 human participants interacting with a hostess NPC in a virtual cafe environment, designed using a Unity 6000.0.53f1, to order food off a menu. Each participant is randomly assigned to 4 treatment: No wait for hostess and No wait for food (00), No wait for hostess and 3-minute wait for food (03), 3-minutes wait for hostess and No wait for food (30), and 3-minutes wait for hostess and 3-minute wait for food (33). Each participant completed all 4 treatments using a Meta Quest Pro headset. For each participant, we collect demographic data, frustration intolerance using the Frustration Discomfort Scale (FDS), subjective feelings of loneliness using the Revised UCLA Loneliness Scale (R-UCLA), severity of social phobia using Social Phobia Inventory (SPIN), and current state of anxiety using State Trait Anxiety Inventory (STAI) prior to immersion. After each treatment, participants provided their perceived level of anxiety using the STAI and custom frustration scales using a 5-point Likert scale. After completing all treatments, participants retook the FDS and completed the NASA Task Load Index (TLX), System Usability Scale (SUS), and Cybersickness in VR Questionnaire (VRSQ). Our dataset also consists of head, left hand, and right hand position and orientation data as well as object names and hit positions of all objects the participant visually and physically engaged with. 
 
 ## Contributors
 TBA
@@ -20,7 +20,7 @@ The dataset is organized into the following folders:
 
 | FolderName |	SubFolders |	DataType |	Contents |
 | ------------- | ------------- | ------------- | ------------- |
-| Cybersickness |	None |	CSV	| Participant responses to the standard Virtual Reality Cyber Sickness Questionnaire (VRCSQ). Each participant is assigned a unique 5-character ID. |
+| Cybersickness |	None |	CSV	| Participant responses to the standard Virtual Reality Cyber Sickness Questionnaire (VRSQ). Each participant is assigned a unique 5-character ID. |
 | Demographics |	None |	CSV	| Participant demographics consisting of: age, self-identified gender, ethnicity, race, education level, whether they wear glasses, if they wear contacts, how frequently they play video games, what type of video games they play, how frequently they use VR, if they own a VR device, what type of VR devices they use, how frequently they use take-out services, how frequently they use dine-in services,and which of these services the most often choose. Each participant is assigned a unique 5-character ID. |
 | FDS	| None |	CSV |	Participant responses to the standard Frustration Discomfort Scale (FDS). The CSV files are annotated as pre_ and post_ to indicate that they were administered prior to and after the immersion. The CSV files are annotated as numerical_ and string_ to indicate the format of the scale values. Each participant is assigned a unique 5-character ID. |
 | NASA_TLX |	None |	CSV	| Participant responses to the standard 21-tick NASA Task Load Index (TLX). Each participant is assigned a unique 5-character ID. |
@@ -31,7 +31,7 @@ The dataset is organized into the following folders:
 | TreatmentResponses |	None |	CSV	| Participant responses to each treatment, i.e., not being forced to wait for a social interaction (00 or 03) or being forced to wait for a social interaction (33 or 30). Participant responses include their frustration level on a 5-point Likert scale caused by people proximity, noise level, time delay, feeling isolated, anxiousness, and finally their likelihood of doing making the same choices in real life. Each participant is assigned a unique 5-character ID.
 | VRData	| Yes	| CSV | Contains 35 subfolders that represents each participant. Each subfolder is named with the unique 5-character ID. Within each participant subfolder there are four additional subfolders named ParticipantID_0_0, ParticipantID_0_3, ParticipantID_3_0, and ParticipantID_3_3. Here Participant_ID is the unique 5-character ID and _0_0, _0_3, _3_0, and _3_3  are the wait conditions. Within the ParticipantID_0_0, ParticipantID_0_3, ParticipantID_3_0, and ParticipantID_3_3 subfolders are *six CSV files for Button Log (ButtonLog), Eye Gaze (EyeGazeLog), *Hand Grab Log (HandGrabLog), Head Position and Orientation (Head), Left Hand (LeftHand), and Right Hand (RightHand). Thus, each participant has *24 CSV files. |
 
-*a HandGrabLog is only created if a participant interacts with an object in the environment.
+*HandGrabLog is only created if a participant interacts with an object in the environment.
 
 ### Dataset Frame Rate Summary
 The minimum (Min), maximum (Max), and average (Mean) frame rate for the eye gaze, hand grab log, head, left hand, and right hand for our dataset are provided below.  
