@@ -5,7 +5,7 @@ The following demographic information was collected from each participant:
 | Dataset Column | Question | Response Value Choices | 
 | ------------- | ------------- | ------------- |
 | 1 | Participant ID | Unique 5-character ID assigned to each participant | 	
-| 2 | Age
+| 2 | Age | Text box |
 | 3 | Self Identified Gender | Female; Male; Other |
 | 4 | Self Identified Gender | Other text box |
 | 5 | Ethnicity | Hispanic or Latino; Not Hispanic or Latino |
