@@ -7,8 +7,8 @@ The following demographic information was collected from each participant:
 | 1 | Participant ID | Unique 5-character ID assigned to each participant | 	
 | 2 | Age (Please enter in numeric form, e.g. 23) | Text box |
 | 3 | Self Identified Gender | Text box |
-| 4 | Ethnicity (Select one) | Hispanic or Latino; Not Hispanic or Latino |
-| 5 | Race (Select one or more) | American Indian or Alaska Native; Asian; Black or African American; Native Hawaiian or Other Pacific Islander; White; Two or more Races |
+| 4 | Ethnicity | Hispanic or Latino; Not Hispanic or Latino |
+| 5 | Race | American Indian or Alaska Native; Asian; Black or African American; Native Hawaiian or Other Pacific Islander; White; Two or more Races |
 | 6 | Highest Level of Education Completed | High School or Equivalent ; Associates degree; Bachelor's degree; Master's degree; Doctorate or Professional Degree; Other|
 | 7 | Highest Level of Education Completed (if Other) | Text box |
 | 8 | Do you wear glasses? | Yes; No |
