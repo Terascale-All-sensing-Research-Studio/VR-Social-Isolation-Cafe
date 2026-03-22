@@ -146,28 +146,24 @@ We provide the directory tree below for the repository and the tree for one exam
 ```
 
 ### Dataset Frame Rate Summary
-The minimum (Min), maximum (Max), average (Mean), and standard deviation (SD) frame rate for the eye gaze, hand grab log, head, left hand, and right hand for our dataset are provided below.  
+The minimum (Min), maximum (Max), average (Mean), and standard deviation (SD) frame rate for the eye gaze, head, left hand, and right hand for our dataset are provided below.  
 
 | Treatment | Type of Data | Min | Max | Mean | SD |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| 00 | EyeGaze | 44.67 | 71.88 | 69.47 | 5.52 |
-|| HandGrabLog | 47.67 | 50.58 | 49.13 | 2.05 |
-|| Head | 44.86 | 71.88 | 70.16 | 5.38 |
-|| LeftHand | 44.86 | 71.88 | 70.16 | 5.38 |
-|| RightHand | 44.86 | 71.88 | 70.16 | 5.38 |
-| 03 | EyeGaze | 50.82 | 72.4 | 69.5 | 3.93 |
-|| HandGrabLog | 8.36 | 77.9 | 37.16 | 16.84 |
-|| Head | 52.66 | 72.44 | 70.79 | 3.24 |
-|| LeftHand | 52.66 | 72.44 | 70.79 | 3.24 |
-|| RightHand | 52.66 | 72.44 | 70.79 | 3.24 |
-| 30 | EyeGaze | 42.73 | 71.79 | 68.87 | 5.85 |
-|| HandGrabLog | 8.68 | 72.09 | 28.8 | 18.92 |
-|| Head | 43.7 | 71.81 | 70.22 | 5.37 |
-|| LeftHand | 43.7 | 71.81 | 70.22 | 5.37 |
-|| RightHand | 43.7 | 71.81 | 70.22 | 5.37 |
-| 33 | EyeGaze | 51.84 | 71.77 | 69.46 | 3.53 |
-|| HandGrabLog | 6.23 | 72.13 | 34.32 | 21.42 |
-|| Head | 52.84 | 72.69 | 70.73 | 3.33 |
-|| LeftHand | 52.84 | 72.69 | 70.73 | 3.33 |
-|| RightHand | 52.84 | 72.69 | 70.73 | 3.33 |
+| 00 | EyeGaze | 46.69 | 70.72 | 66.39 | 4.89 |
+|| Head | 46.83 | 70.45 | 66.85 | 4.70 |
+|| LeftHand | 46.83 | 70.45 | 66.85 | 4.70 |
+|| RightHand | 46.83 | 70.45 | 66.85 | 4.70 |
+| 03 | EyeGaze | 50.75 | 71.67 | 68.78 | 3.80 |
+|| Head | 52.42 | 71.71 | 70.00 | 3.29 |
+|| LeftHand | 52.42 | 71.71 | 70.00 | 3.29 |
+|| RightHand | 52.42 | 71.71 | 70.00 | 3.29 |
+| 30 | EyeGaze | 42.72 | 71.40 | 68.13 | 5.75 |
+|| Head | 43.79 | 71.43 | 69.41 | 5.32 |
+|| LeftHand | 43.79 | 71.43 | 69.41 | 5.32 |
+|| RightHand | 43.79 | 71.43 | 69.41 | 5.32 |
+| 33 | EyeGaze | 51.64 | 71.46 | 69.09 | 3.51 |
+|| Head | 52.60 | 72.45 | 70.31 | 3.32 |
+|| LeftHand | 52.60 | 72.45 | 70.31 | 3.32 |
+|| RightHand | 52.60 | 72.45 | 70.31 | 3.32 |
 
