@@ -142,7 +142,9 @@ We provide the directory tree below for the repository and the tree for one exam
 │   │       └── RightHand.csv│   
 │   └── README.md
 ├── dictionary.csv
-└── README.md
+├── LICENSE
+├── README.md
+└── vrdata_frame_summary.py
 ```
 
 ### Dataset Frame Rate Summary
